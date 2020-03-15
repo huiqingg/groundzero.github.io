@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+<title> GALLERY </title>
+<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:400,900|Megrim|Mina:400,700|Patrick+Hand|Poppins&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  background-color: black;
+}
+h1   {color: white; text-align:center; font-family: 'Megrim', cursive;font-size:80px;}
+h2   {color: white; text-align:center; font-family: 'Mina', sans-serif; font-size:50px;}
+h3   {color: white; text-align:left; font-family: 'Mina', sans-serif; font-size:40px;}
+p    {color: white; text-align:left;font-family: 'Mina', sans-serif; font-size:20px;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;  
+  font-family: 'Mina', sans-serif;
+
+}
+
+li a:hover {
+  background-color: White;
+  color: black;
+
+}
+
+.active {
+  background-color: gray;
+}
+
+<!--ensure picture stays in div-->
+.clearfix {
+  overflow: auto;
+}
+
+<!--TWO PHOTOS SIDE BY SIDE-->
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 47.6%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+<!-- ZOOM IN ON HOVER -->
+
+.zoom {
+  padding: 0px;
+  background-color: black;
+  transition: transform .2s;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15); 
+}
+
+
+</style>
+</head>
+<body>
+
+<!--NAVIGATION BAR-->
+
+<ul>
+  <li><a href="index.html">GROUNDZERO</a></li>
+  <li><a href="programs.html">PROGRAMS</a></li>
+  <li><a href="buy.html">SHOP</a></li>
+  <li><a class="active" href="gallery.html">GALLERY</a></li>
+  <li><a href="contact.html">CONTACT US</a></li>
+</ul>
+
+<div class="clearfix" style= "background-color: black;
+  width: 700px;
+  padding: 0px;
+  margin: auto">
+  <h1> GALLERY </h1>
+ </div> 
+<hr>
+<br>
+
+<h2> SPECIAL GUESTS</h2>
+<div class="clearfix" style= " width: 70%;
+  padding: 30px;
+  border: 0px;
+  margin:auto">
+<h3> THE SAM WILLOWS</h3>
+
+   <div class="zoom">
+    <img src="samwillows.jpeg" alt="Sam Willows" style="width:100%">
+   </div>
+<br>
+
+<div class="row">
+  <div class="column">
+   <div class="zoom">
+    <img src="samwillowssinglethree.jpeg" alt="Sam Willows" style="width:100%">
+   </div>
+ </div>
+
+  <div class="column">
+   <div class="zoom">
+    <img src="samwillowssingletwo.jpeg" alt="Sam Willows" style="width:100%">
+   </div>
+ </div>
+
+  <div class="column">
+   <div class="zoom">
+    <img src="samwillowssingle.jpeg" alt="Sam Willows" style="width:100%">
+   </div>
+ </div>
+
+ <div class="column">
+   <div class="zoom">
+    <img src="samwillowssinglefour.jpeg" alt="Sam Willows" style="width:100%">
+   </div>
+ </div>
+</div>
+</div>
+
+<div class="clearfix" style= "background-color: gray;
+  width: 100%;
+  height: 20px;
+  border: 0px;
+  padding: 0px;
+  margin: auto">
+ </div> 
+
+</body>
+</html>
+
